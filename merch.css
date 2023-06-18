@@ -1,0 +1,211 @@
+body{
+    background-color: black;
+}
+a:hover{
+    cursor: pointer;
+    color: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: wheat;
+    padding-top: 200px;
+    padding-left: 100px;
+    text-align: centre;
+    font-size: 80px;
+}
+#footer{
+    height: 40px;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    color: orange;
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+a{
+    color: orange;
+    text-shadow: orangered;
+    text-decoration: none;
+    margin-right: 80px;
+    
+}
+#navbar{
+    color: orange;
+    padding-top: 20px;
+    height: 60px;
+    background-color: black;
+    padding-left: 100px;
+    text-align: center;
+}
+.grid-container{
+    
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    height: 2500px;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 300px 300px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap:100px
+    /* justify-content: centre;
+    height: 600px;
+    align-content: start; */
+}
+.grid-item{
+    margin: 10px;
+    height: 400px;
+    width: 420px;
+    background-color:	#36454F;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+}
+img{
+    display: inline-block;
+    height: 200px;
+    width:200px;
+}
+
+
+
+
+@media only screen and(max-width:768px){
+    #navbar{
+        display: flex;
+        color: orange;
+        padding-top: 20px;
+        height: 80px;
+        background-color: black;;
+        /* padding-left: 100px; */
+        text-align: center;
+        margin: 0;
+    }
+    a{
+        color: orange;
+        text-shadow: orangered;
+        text-decoration: none;
+        margin-right: 80px;
+        
+    }
+    #footer{
+        display: flex;
+        height: 60px;
+        width: 100%;
+        padding-top: 7px;
+        border: 2px solid black;
+        color: orange;
+        background-color: black;
+        text-align: center;
+    }
+    body{
+        background-color: black;
+    }
+    a:hover{
+        cursor: pointer;
+        color: red;
+    }
+    h1{
+        color: wheat;
+        padding-top: 200px;
+        padding-left: 100px;
+        text-align: centre;
+        font-size: 80px;
+    }
+    .grid-container{
+        
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: 300px 300px 300px;
+        grid-column-gap: 20px;
+        grid-row-gap:100px
+        /* justify-content: centre;
+        height: 600px;
+        align-content: start; */
+    }
+    .grid-item{ 
+        margin-top: 500px;
+        height: 400px;
+        width: 420px;
+        background-color:	#36454F;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    p{
+        font-size: 30px;
+    }
+    img{
+        display: inline-block;
+        height: 200px;
+        width:200px;
+    }
+}
+
+@media screen and (max-device-width: 768px){
+    body{
+        border: 2px solid black;  
+        overflow: scroll;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        overflow: scroll;
+        border: 2px solid brown;
+}
+    #footer{
+    border: 2px solid brown;
+    width: 95%;
+    height: 220px;
+}
+    a{
+    font-size: 70%;
+    }
+    .grid-container{
+        
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 2500px;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: 300px 300px 300px;
+        grid-column-gap: 20px;
+        grid-row-gap:100px
+        /* /* justify-content: centre;
+        height: 600px;
+        align-content: start; */
+    }
+    #grid-1,#grid-2,#grid-3,#grid-4,#grid-5,#grid-6{
+        width: 300px;
+    }
+    #grid-1,#grid-2,#grid-3,#grid-4,#grid-5,#grid-6 a{
+        font-size: 20px;
+    }
+    #tp{
+        margin-left: 51px;
+    }
+}  

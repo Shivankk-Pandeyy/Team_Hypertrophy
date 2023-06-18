@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#footer{
+    height: 60px;
+    width: 100%;
+    padding-top: 7px;
+    border: 2px solid black;
+    color: orange;
+    background-color: black;
+    text-align: center;
+}
+a{
+    color: orange;
+    text-shadow: orangered;
+    text-decoration: none;
+    margin-right: 80px;   
+}
+a:hover{
+    cursor: pointer;
+    color: red;
+}
+#navbar{
+    color: orange;
+    padding-top: 20px;
+    height: 60px;
+    background-color: black;
+    padding-left: 100px;
+    text-align: center;
+}
+.grid-container{
+    /* background-image: url(stars\ pattern.jpg); */
+    background-size: cover;
+    border: 5px solid transparent;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    height: 800px;
+    background-size: cover;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 300px 300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* justify-content: centre;
+    height: 600px;
+    align-content: start; */
+}
+.grid-item{
+    border: 5px solid blue;
+    height: 200px;
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+img{
+    height:500px;
+    width: 500px;
+    margin-right: 500px;
+}
+#grid-1{
+    border-color: transparent;
+    background-color: transparent;
+    width: 600px;
+    height: 800px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#grid-2{
+    color: wheat;
+    background-color: transparent;
+    border-color: transparent;
+    width: 850px;
+    height: 800px;
+}
+#grid-3{
+    border: 5px solid blue;
+    width: 500px;
+    height: 250px;
+}
+
+
+body{
+    /* background: url("desktop-wallpaper-nice-backgrounds-extra-nice-background-pic-thumbnail.jpg"); */
+    background-color: black;
+    background-size: 280% ;
+    background-position: -400px 0px;
+}
+.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+h1{
+    text-align: center;
+    padding: 02px;
+    font-family: sans-serif;
+}
+.registration{
+    background-color: wheat;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255 ,255 ,255 ,0.3);
+    box-shadow: 2px 2px 15px
+    rgba(0 ,0 ,0 ,0.3);
+
+}
+#register{
+    margin: 40px;
+}
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+#name{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow:inset 1px 1px 5px rgba(0 ,0 ,0 ,0.3) ;
+}
+#submit{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius:3px;
+    background-color:transparent;
+    color:wheat;
+    font-family: sans-serif;
+    font-size: larger;
+    cursor: pointer;
+    border-radius:20px;
+    border: 4px solid indianred;
+    margin-bottom: 20px ;
+
+
+}
+#submit:hover{
+color:blue;
+}
+
+    
+    
+
+label,span,h1{
+
+    font-size: 40px;
+text-shadow: 1px 1px 5px;
+}
+#male{
+    padding: auto;
+    font-size: larger;
+    font-family: sans-serif;
+    
+}
+#female{
+    padding: auto;
+    font-size: larger;
+    font-family: sans-serif;
+
+}
+#others{
+    padding: auto;
+    font-size: larger;
+    font-family: sans-serif;
+    
+}
+img{
+    padding-top: 100px;
+    border: blueviolet;
+}
+#subbutton{
+    display: inline-block;
+    border: 3px solid indianred;
+    border-radius: 10px;
+} 
+@media  screen and (max-width:768px){
+    /* body{
+        max-width: 100%;
+        background-color: black;
+        height: 700px;
+        width: 100%;
+    } */
+    body{
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        width: 157%;
+        overflow: scroll;
+        border: 2px solid brown;
+    }
+    #footer{
+        border: 2px solid brown;
+        width: 157%;
+        height: 40px;
+    }
+    #logo{
+        padding: 1px;
+        padding-top: -20px;
+        font-size: 10px;
+    }
+    img{
+        margin-left: 60px;
+        margin-top: -100px;
+        height:450px;
+        width: 450px;
+
+    }  
+    .grid-container{
+        /* border: 5px solid blue; */
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        height: 950px;
+        width: 100%;
+        background-size: cover;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: 300px 300px 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        /* justify-content: centre;
+        height: 600px;
+        align-content: start; */
+    }
+    #grid-1{
+        /* border: 5px solid blue; */
+        background-color: transparent;
+        border-color: transparent;
+        width: 800px;
+        height: 515px;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        margin-right: 200px;
+        /* background-image: url("stars\ pattern.avif");
+        background-size: cover; */
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+    #grid-2{
+        color: wheat;
+        /* border: 5px solid blue; */
+        margin-left: -950px;
+        margin-top: 350px;
+        width: 200px;
+        height: 250px;
+        font-size: 12px;
+        background-color: transparent;
+        border-color: transparent;
+        /* background-image: url("stars\ pattern.avif");
+        background-size: cover; */
+    }
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 10px;
+    }
+    #subbutton{
+        font-size:40px;
+        margin-top:30px;
+        margin-left:90px;
+        text-align: center;
+        display: inline-block;
+        border: 3px solid indianred;
+        border-radius: 10px;
+    } 
+}
