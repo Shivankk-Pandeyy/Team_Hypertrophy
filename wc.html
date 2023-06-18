@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Shivank Pandey,Ameesh Bhatia">
+    <meta name="description" content="The Official Website For TEAM HYPERTROPHY">
+    <title>TEAM HYPERTROPHY WORKOUT CALCULATORS</title>
+    <link rel="shortcut icon" href="BODY.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="wc.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">TEAM HYPERTROPHY</a>
+        <a href="hp.html" id="logo">HOMEPAGE</a>
+        <a href="about.html" id="logo">ABOUT US</a>
+        <a href="ws.html" id="logo">WORKOUT SCHEDULE</a>
+        <a href="login.html" id="logo">OFFICIAL MERCHANDISE</a>
+        <a href="cus.html" id="logo">CONTACT US</a>
+    <div>
+        <div class="wrapper">
+        <div class="statictext">TEAM HYPERTROPHY</div>
+        <ul class="dynamictext">
+            <li><span>BMI CALCULATE</span></li>
+            <li><span>BMR CALCULATE</span></li>
+            <li><span>CALORIE CALCULATE</span></li>
+            <li><span>MOTIVATION</span></li>
+        </ul>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" id="grid-1">BMI CALCULATOR
+            <div id="bmi">
+            <p>HEIGHT IN CM
+                <input type="text" required id="height"><br><span id="heighterror"></span>
+            </p>
+            <p>WEIGHT IN KG
+                <input type="text" required  id="weight"><br><span id="weighterror"></span>
+            </p>
+            <button id="btn">CALCULATE</button>
+            <p id="output">BMI=</p>
+            <p id="display_bmi"></p>
+        </div>
+        </div>
+        <div class="grid-item" id="grid-2">BMR CALCULATOR
+            <div id="bmr">
+                <p>HEIGHT IN CM
+                    <input type="text" required id="heightbmr"><br>
+                </p>
+                <p>WEIGHT IN KG
+                    <input type="text" required  id="weightbmr"><br>
+                </p>
+                <p>AGE</p>
+                    <input type="text" required  id="age"><br>
+                <p>GENDER</p>
+                    <input type="text" required  id="gender"><br>
+                
+                <button id="btnbmr">CALCULATE</button>
+                <p id="outputbmr">BMR=</p>
+                <p id="display_bmr"></p>
+            </div>
+        </div>
+        <div class="grid-item" id="grid-3"> CALORIE CALCULATOR
+            <p>WILL ARIVE SOON!!</p>
+        </div>
+        <div class="grid-item" id="grid-4">
+            <p style="color:orange">YOUR DAILY MOTIVATION</p>
+            <label id="qot"></label>
+            <h2>By</h2>
+            <h2 id="author"></h2>
+        </div>
+    </div>
+    <div id="footer" style="text-align: center;">
+        <p>&#169; Copyright of TEAM HYPERTROPHY
+        <br>Made With Lot Of Efforts &hearts;&hearts;TEAM HYPERTROPHY[THT]
+        </p>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
