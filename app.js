@@ -31,6 +31,48 @@ const bmi=()=>{
     }
 }
 btn_bmi.addEventListener('click',bmi)
+//BMR CALCULATION 
+let H_bmr=document.getElementById('heightbmr');
+let W_bmr=document.getElementById('weightbmr');
+let btn_bmr=document.getElementById('btnbmr');
+let age=document.getElementById('age');
+let gen=document.getElementById('gender');
+const bmr=() =>{
+    let height=parseInt(H_bmr.value);
+    let weight=parseInt(W_bmr.value);
+    let agebmr=parseInt(age.value);
+    let gender=gen.value;
+    if(height && weight && agebmr &&gender){
+    if(gender=="MALE" || "male"){
+        let bmrans=(10*weight)+(6.25*height)-(5*agebmr)+5;
+        console.log(bmrans);
+        let bmr_ans=document.getElementById('display_bmr');
+        bmr_ans.innerHTML=`Maintainence Calories = ${bmrans}Calories/Day`
+    }
+    else if(gender=="FEMALE" || "female"){
+        let bmrans=(10*weight)+(6.25*height)-(5*agebmr)-16;
+        console.log(bmrans);
+        let bmr_ans=document.getElementById('display_bmr');
+        bmr_ans.innerHTML=`Maintainence Calories = ${bmrans}Calories/Day`
+    }
+    }
+    else{
+        alert("You haven't added all the Feilds");
+    }
+}
+
+//MOTIVATION 
+
+btn_bmr.addEventListener('click',bmr);
+let index = Math.floor(Math.random()*1644);
+fetch("https://type.fit/api/quotes")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        document.getElementById("qot").innerHTML=(data[index].text);
+        document.getElementById("author").innerHTML=(data[index].author);
+    });
 
 
 
