@@ -43,13 +43,13 @@ const bmr=() =>{
     let agebmr=parseInt(age.value);
     let gender=gen.value;
     if(height && weight && agebmr &&gender){
-    if(gender=="MALE" || "male"){
+    if(document.getElementById('gender').value.toString().toLowerCase()=='male'){
         let bmrans=(10*weight)+(6.25*height)-(5*agebmr)+5;
         console.log(bmrans);
         let bmr_ans=document.getElementById('display_bmr');
         bmr_ans.innerHTML=`Maintainence Calories = ${bmrans}Calories/Day`
     }
-    else if(gender=="FEMALE" || "female"){
+    else if(document.getElementById('gender').value.toString().toLowerCase()=='female'){
         let bmrans=(10*weight)+(6.25*height)-(5*agebmr)-16;
         console.log(bmrans);
         let bmr_ans=document.getElementById('display_bmr');
@@ -57,7 +57,7 @@ const bmr=() =>{
     }
     }
     else{
-        alert("You haven't added all the Feilds");
+        alert("Add gender as male or female");
     }
 }
 
@@ -78,15 +78,15 @@ fetch("https://type.fit/api/quotes")
 
     //CALORIE CALCULATOR
     var query = '1lb brisket and fries'
-    $.ajax({
-        method: 'GET',
-        url: 'https://api.api-ninjas.com/v1/nutrition?query=' + query,
-        headers: { 'X-Api-Key': 'YOUR_API_KEY'},
-        contentType: 'application/json',
-        success: function(result) {
-            console.log(result);
-        },
-        error: function ajaxError(jqXHR) {
-            console.error('Error: ', jqXHR.responseText);
-        }
-    });
+    // $.ajax({
+    //     method: 'GET',
+    //     url: 'https://api.api-ninjas.com/v1/nutrition?query=' + query,
+    //     headers: { 'X-Api-Key': 'YOUR_API_KEY'},
+    //     contentType: 'application/json',
+    //     success: function(result) {
+    //         console.log(result);
+    //     },
+    //     error: function ajaxError(jqXHR) {
+    //         console.error('Error: ', jqXHR.responseText);
+    //     }
+    // });

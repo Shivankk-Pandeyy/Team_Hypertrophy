@@ -183,10 +183,13 @@ input:focus{
     color:aquamarine;
 }
 #age{
+    width: 120px;
     margin-top: 20px;
+    margin-left: 250px;
 }
 #gender{
-    margin-left: 140px;
+    width: 220px;
+    margin-left: 210px;
 }
 #btnbmr{
     margin-left: 220px;
